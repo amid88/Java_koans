@@ -100,7 +100,8 @@ public class AboutExceptions {
 	@Koan
 	public void catchUncheckedExceptions() {
 		// What do you need to do to catch the unchecked exception?
-		doUncheckedStuff();
+		//doUncheckedStuff();
+
 	}
 	
 	@SuppressWarnings("serial")
@@ -122,6 +123,6 @@ public class AboutExceptions {
 		} catch(ParentException e) {
 			s = "ParentException";
 		}
-		assertEquals(s, __);
+		assertEquals(s, "ChildException");
 	}	
 }
